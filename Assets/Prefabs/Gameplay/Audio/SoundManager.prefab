@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2374293177240737293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746855593395755269}
+  - component: {fileID: 1724940720423675327}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1746855593395755269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374293177240737293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1724940720423675327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374293177240737293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f59af1a537436428659f5d1262037a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: CancionPrincipal
+    clip: {fileID: 8300000, guid: 0f4ae5cb625bb5240a8ef15ab4558579, type: 3}
+    volume: 0.034
+    pitch: 0.1
+    loop: 1
+    type: 0
+    source: {fileID: 0}
+  - name: Ataque1
+    clip: {fileID: 8300000, guid: efb740a457363fc48aec54b61dccc3c5, type: 3}
+    volume: 0.167
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: Ataque2
+    clip: {fileID: 8300000, guid: 119de42efacd17d4e8b5ad3460f8f2eb, type: 3}
+    volume: 0.154
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: Caja1
+    clip: {fileID: 8300000, guid: 3c7dabc7cc6f03647b521346a7d96193, type: 3}
+    volume: 0.042
+    pitch: 0.1
+    loop: 1
+    type: 1
+    source: {fileID: 0}
+  - name: Caja2
+    clip: {fileID: 8300000, guid: aa42b5e1dc78cf74e9f47222297cc7fa, type: 3}
+    volume: 0.047
+    pitch: 0.1
+    loop: 1
+    type: 1
+    source: {fileID: 0}
+  - name: Steps
+    clip: {fileID: 8300000, guid: 55844867964ee234ca829b6e351c97b5, type: 3}
+    volume: 0.094
+    pitch: 0.1
+    loop: 1
+    type: 1
+    source: {fileID: 0}
+  - name: BreakWood
+    clip: {fileID: 8300000, guid: a94c2925ef4ee0641a7230d4628bc13a, type: 3}
+    volume: 0.094
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: f184a929d998e924093cef8a52735be5, type: 3}
+    volume: 0.094
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 8300000, guid: 3c0711bf65459eb40a7d3de1645e9320, type: 3}
+    volume: 0.094
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: UI
+    clip: {fileID: 8300000, guid: 30d8bc730c578fb40b7a13b1c80b8139, type: 3}
+    volume: 0.094
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: SecretStoneWall
+    clip: {fileID: 8300000, guid: 4cafcb05c05ab244bb0e9c76db765077, type: 3}
+    volume: 0.769
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: ButtonPressed
+    clip: {fileID: 8300000, guid: e8195177a1ab5374f9b9f09694e33bec, type: 3}
+    volume: 0.094
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}
+  - name: Cutucuchillo1
+    clip: {fileID: 8300000, guid: 58f33823f538c004fb05d93b959aa524, type: 3}
+    volume: 0.059
+    pitch: 0.1
+    loop: 0
+    type: 1
+    source: {fileID: 0}

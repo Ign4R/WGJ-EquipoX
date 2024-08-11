@@ -28,11 +28,21 @@ public class ButtonPressedController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Box") && IsPressed) IsPressed = false;
+        if (other.CompareTag("Box") && IsPressed) 
+        {
+            IsPressed = false;
+            AudioManager.main.Stop("ButtonPressed");
+            AudioManager.main.Play("SecretStoneWall");
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Box") && !IsPressed) IsPressed = true;
+        if (other.CompareTag("Box") && !IsPressed)
+        {
+            IsPressed = true;
+            AudioManager.main.Play("ButtonPressed");
+            AudioManager.main.Play("SecretStoneWall");
+        }
     }
 }

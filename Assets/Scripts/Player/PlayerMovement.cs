@@ -25,8 +25,6 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         minMovement = new Vector3(.02f, .02f, .02f);
     }
 
