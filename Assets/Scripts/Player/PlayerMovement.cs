@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
+    private Vector3 minMovement;
 
     [Header("Ground Check")]
     public Transform groundCheck;
@@ -15,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
+    [Header("References")]
+    public Animator anim;
     private Rigidbody rb;
     private bool isGrounded;
 
@@ -23,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        minMovement = new Vector3(.02f, .02f, .02f);
     }
 
     void Update()
@@ -40,6 +45,15 @@ public class PlayerMovement : MonoBehaviour
         moveVelocity.y = rb.velocity.y;
         rb.velocity = moveVelocity;
 
+        if (moveVelocity.magnitude > minMovement.magnitude)
+        {
+            anim.SetBool("IsRunning", true);
+        }
+        else
+        {
+            anim.SetBool("IsRunning", false);
+        }
+
         if (moveDirection != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
@@ -51,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            anim.SetTrigger("IsJumping");
         }
     }
 
