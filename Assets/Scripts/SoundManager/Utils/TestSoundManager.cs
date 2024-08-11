@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEditor;
 
+#if UNITY_EDITOR
 public class TestSoundManager : MonoBehaviour
 {
    public string soundName;
@@ -36,3 +37,4 @@ public class OpenFileButtonScript : Editor
         }
     }
 }
+#endif
