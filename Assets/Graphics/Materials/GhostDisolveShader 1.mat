@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6269376816044051975
+--- !u!114 &-6139722799746031806
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,9 +20,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GhostGlitchMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 85cbfc02b25c27e4aafcec396e102b15, type: 3}
-  m_Parent: {fileID: 0}
+  m_Name: GhostDisolveShader 1
+  m_Shader: {fileID: -6465566751694194690, guid: c80326ff5c1c52c45af9819e422f992e, type: 3}
+  m_Parent: {fileID: 2100000, guid: f88e0fb065309334486b49c6a93dd92d, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,32 +35,14 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Cliping: 0
-    - _Fresnel: 2
-    - _GlitchNoiseScale: 0.1
-    - _Noise: 0
-    - _NoisePower: 1
-    - _NoiseScale: 3
-    - _NoiseSpeed: 2
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _TimeSpeed: 0
+    - _CutHeight: -1.63
+    - _EdgeWidth: 0.11
+    - _NoiseScale: 50
+    - _NoiseStrength: 2.58
     m_Colors:
-    - _Color: {r: 45.254833, g: 45.254833, b: 45.254833, a: 0}
-    - _NoiseTiling: {r: 0, g: 1, b: 0, a: 0}
+    - _DisolveColor: {r: 2.9960787, g: 2.9960787, b: 2.9960787, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

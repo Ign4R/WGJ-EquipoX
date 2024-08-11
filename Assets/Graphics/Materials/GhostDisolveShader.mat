@@ -26,7 +26,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -55,16 +55,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClipping: 0
-    - _CutHeight: -1.63
-    - _DisolveAnimSpeedX: 0.05
+    - _CutHeight: -0.82
+    - _DisolveAnimSpeedX: 0
     - _DisolveAnimSpeedY: 0
-    - _EdgeWidth: 0.11
+    - _EdgeWidth: 0.06
     - _Inline: 0.4
-    - _NoiseScale: 50
-    - _NoiseStrength: 2.58
+    - _NoiseScale: 182.6
+    - _NoiseStrength: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _DisolveColor: {r: 2.9960787, g: 2.9960787, b: 2.9960787, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DisolveColor: {r: 0, g: 3.5648696, b: 2.7935674, a: 1}
+    - _MainColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
