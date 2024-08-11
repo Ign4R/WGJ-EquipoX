@@ -6,10 +6,14 @@ public class LifeManager : MonoBehaviour
 {
     public int lives = 3;
     public Image[] lifeImages;
+    private PlayerMovement pm;
+    public ThirdPersonCamera tpc;
+    public AttackBehaviour ab;
 
     private void Start()
     {
         UpdateLivesUI();  
+        pm = GetComponent<PlayerMovement>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -29,6 +33,7 @@ public class LifeManager : MonoBehaviour
 
             if (lives <= 0)
             {
+                pm.anim.SetBool("IsDead", true);
                 GameOver();  
             }
         }
@@ -51,6 +56,9 @@ public class LifeManager : MonoBehaviour
 
     private void GameOver()
     {
+        pm.enabled = false;
+        tpc.enabled = false;
+        ab.enabled = false;
         Debug.Log("Game Over");
     }
 
