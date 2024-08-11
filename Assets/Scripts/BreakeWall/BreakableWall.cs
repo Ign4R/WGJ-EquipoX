@@ -22,6 +22,7 @@ public class BreakableWall : MonoBehaviour
                 Vector3 contactPoint = collision.contacts[0].point;
                 rb.AddExplosionForce(explosionForce, contactPoint, explosionRadius, upwardsModifier, ForceMode.Impulse);
                 Destroy(this.gameObject,destroyAfter);
+                AudioManager.main.Play("BreakWood");
             }
         }
     }

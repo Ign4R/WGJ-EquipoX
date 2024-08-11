@@ -9,12 +9,20 @@ public class GrabAndMove : MonoBehaviour
     public GameObject grabbedObject;
     public Rigidbody playerRigidBody;
 
+    public Animator anim;
+
+    public string cajaAudioClip;
+
     void Update()
     {
         if(hasObjectToGrab && Input.GetKeyDown(KeyCode.F) && grabbedObject != null && !hasObjectGrabbed)
         {
             hasObjectGrabbed = true;
             grabbedObject.AddComponent<HingeJoint>().connectedBody = playerRigidBody;
+            anim.SetBool("IsPushing", true);
+            bool randomBool = Random.value > 0.5f;
+            cajaAudioClip = randomBool ? "Caja1" : "Caja2";
+            AudioManager.main.Play(cajaAudioClip);
         } 
         else if(hasObjectGrabbed && Input.GetKeyDown(KeyCode.F))
         {
@@ -22,6 +30,8 @@ public class GrabAndMove : MonoBehaviour
             hasObjectToGrab = false;
             Destroy(grabbedObject.GetComponent<HingeJoint>());
             grabbedObject = null;
+            anim.SetBool("IsPushing", false);
+            AudioManager.main.Stop(cajaAudioClip);
         }
     }
 

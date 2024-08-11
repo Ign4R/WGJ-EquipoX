@@ -18,6 +18,9 @@ public class MenuVolumeController : MonoBehaviour
         sfxVolumeSlider.onValueChanged.AddListener(OnSFXSliderValueChanged);
         uiVolumeSlider.onValueChanged.AddListener(OnUISliderValueChanged);
         volumeOptionUI.SetActive(volumeOptionMenuOpenClosed);
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
@@ -26,6 +29,15 @@ public class MenuVolumeController : MonoBehaviour
         {
             volumeOptionMenuOpenClosed = !volumeOptionMenuOpenClosed;
             volumeOptionUI.SetActive(volumeOptionMenuOpenClosed);
+            if(volumeOptionMenuOpenClosed)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }else{
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+
         }
     }
 

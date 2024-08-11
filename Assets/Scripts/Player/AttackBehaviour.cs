@@ -11,6 +11,8 @@ public class AttackBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             anim.SetTrigger("ScytheAttackAnimation");
+            bool randomBool = Random.value > 0.5f;
+            AudioManager.main.Play(randomBool ? "Ataque1" : "Ataque2");
         }
     }
 }
