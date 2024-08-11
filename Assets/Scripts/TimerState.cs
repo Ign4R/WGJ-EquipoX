@@ -9,7 +9,7 @@ public class TimerState : MonoBehaviour
     [SerializeField] private GameState currentState;
 
     [SerializeField] private Slider timeSlider;
-    [SerializeField] private float maxTime = 10f;
+    [SerializeField] private float maxTime = 60f;
     [SerializeField] private float waitTimeBetweenStates = 2f;
 
     private void Start()
