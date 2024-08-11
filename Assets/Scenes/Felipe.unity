@@ -1256,7 +1256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a68aaca3d52cce54fb1427398d1999d5, type: 2}
+  - {fileID: 2100000, guid: 9aedc7e480ccaf14fb20fa966b51fc24, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1739,8 +1739,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   timeSlider: {fileID: 947474415}
-  maxTime: 10
-  waitTimeBetweenStates: 2
+  maxTimeState1: 3
+  maxTimeState2: 3
+  waitTimeBetweenStates: 0.8
+  lifeManager: {fileID: 1036821612}
+  estado1Color: {r: 0.048508644, g: 1, b: 0, a: 1}
+  estado2Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &1036821612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,7 +1889,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9aedc7e480ccaf14fb20fa966b51fc24, type: 2}
+  - {fileID: 2100000, guid: 2daa73b86cb6b2b4aa5d4846477670cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1986,7 +1990,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2daa73b86cb6b2b4aa5d4846477670cf, type: 2}
+  - {fileID: 2100000, guid: 246a755d46894014a847c208c81fcd39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

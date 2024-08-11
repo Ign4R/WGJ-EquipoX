@@ -20,7 +20,7 @@ public class LifeManager : MonoBehaviour
         }
     }
 
-    private void LoseLife()
+    public void LoseLife()
     {
         if (lives > 0)
         {
