@@ -33,7 +33,7 @@ public class GrabAndMove : MonoBehaviour
             grabbedObject = other.gameObject;
         }
     }
-        private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Box") && !hasObjectGrabbed)
         {

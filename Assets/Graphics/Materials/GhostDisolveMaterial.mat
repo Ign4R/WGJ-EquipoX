@@ -55,7 +55,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClipping: 0
-    - _CutHeight: 0.6
+    - _CutHeight: -3
     - _DisolveAnimSpeedX: 0.1
     - _DisolveAnimSpeedY: 0.1
     - _EdgeWidth: 0.06
@@ -65,6 +65,6 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _DisolveColor: {r: 0, g: 2.8648636, b: 2.9960785, a: 1}
-    - _MainColor: {r: 0.5896226, g: 0.9112716, b: 1, a: 0.44705883}
+    - _DisolveColor: {r: 4, g: 4, b: 4, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 0.44705883}
   m_BuildTextureStacks: []
