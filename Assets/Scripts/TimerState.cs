@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class TimerState : MonoBehaviour
 {
-    [SerializeField] private enum GameState { Estado1, Estado2}
-    [SerializeField] private GameState currentState;
+     public enum GameState { Estado1, Estado2}
+     public GameState currentState;
 
     [SerializeField] private Slider timeSlider;
     [SerializeField] private float maxTime = 60f;
