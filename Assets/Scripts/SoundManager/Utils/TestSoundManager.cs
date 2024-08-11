@@ -35,5 +35,4 @@ public class OpenFileButtonScript : Editor
             AudioManager.main.Volume(testSoundManager.soundName, testSoundManager.volume);
         }
     }
-  
 }

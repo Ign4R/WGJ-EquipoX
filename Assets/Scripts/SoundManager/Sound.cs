@@ -14,6 +14,9 @@ public class Sound
 
     public bool loop;
 
+    [Header("BGM/SFX/UI")]
+    public AudioType type;
+
     [HideInInspector]
     public AudioSource source;
 }
