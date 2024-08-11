@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerState : MonoBehaviour
 {
-    [SerializeField] private enum GameState { Estado1, Estado2 }
+    [SerializeField] private enum GameState { Estado1, Estado2}
     [SerializeField] private GameState currentState;
 
     [SerializeField] private Slider timeSlider;
@@ -35,9 +35,8 @@ public class TimerState : MonoBehaviour
                 case GameState.Estado2:
                     yield return StartCoroutine(StateTimer(maxTime));
                     yield return new WaitForSeconds(waitTimeBetweenStates);
-                    currentState = GameState.Estado3;
                     Debug.Log("Estado Fantasma");
-                    break;
+                    yield break;
             }
         }
     }
