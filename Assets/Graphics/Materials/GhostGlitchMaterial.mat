@@ -55,12 +55,12 @@ Material:
     - _GlitchNoiseScale: 0.1
     - _Noise: 0.962
     - _NoisePower: 1
-    - _NoiseScale: 20
-    - _NoiseSpeed: 3
+    - _NoiseScale: 3
+    - _NoiseSpeed: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _TimeSpeed: 0
     m_Colors:
-    - _Color: {r: 4, g: 4, b: 4, a: 0}
-    - _NoiseTiling: {r: 0, g: 30, b: 0, a: 0}
+    - _Color: {r: 10.680627, g: 10.680627, b: 10.680627, a: 0}
+    - _NoiseTiling: {r: 0, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
