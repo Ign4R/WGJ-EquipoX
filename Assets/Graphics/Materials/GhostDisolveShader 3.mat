@@ -43,6 +43,6 @@ Material:
     - _NoiseScale: 50
     - _NoiseStrength: 2.58
     m_Colors:
-    - _DisolveColor: {r: 2.9960787, g: 2.9960787, b: 2.9960787, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DisolveColor: {r: 0, g: 4.0000005, b: 0.08019448, a: 1}
+    - _MainColor: {r: 0, g: 1, b: 0.083747864, a: 1}
   m_BuildTextureStacks: []

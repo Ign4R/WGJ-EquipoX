@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GhostGlitchMaterial 1
+  m_Name: Mat_Piel
   m_Shader: {fileID: -6465566751694194690, guid: 85cbfc02b25c27e4aafcec396e102b15, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,16 +51,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cliping: 0
-    - _Fresnel: 2
-    - _GlitchNoiseScale: 0.1
-    - _Noise: 0.559
-    - _NoisePower: 1
-    - _NoiseScale: 3
-    - _NoiseSpeed: 2
+    - _Fresnel: 0.27
+    - _GlitchNoiseScale: 0
+    - _Noise: 1
+    - _NoisePower: 0.8
+    - _NoiseScale: 15.8
+    - _NoiseSpeed: 0.29
     - _QueueControl: 0
     - _QueueOffset: 0
     - _TimeSpeed: 0
     m_Colors:
-    - _Color: {r: 14.259475, g: 14.259475, b: 14.259475, a: 0}
-    - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 0.24237561, g: 0.8962264, b: 0.5278992, a: 0}
+    - _NoiseTiling: {r: -11, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []

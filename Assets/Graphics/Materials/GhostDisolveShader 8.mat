@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GhostDisolveShader 2
+  m_Name: GhostDisolveShader 8
   m_Shader: {fileID: -6465566751694194690, guid: c80326ff5c1c52c45af9819e422f992e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -55,16 +55,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClipping: 0
-    - _CutHeight: -1.68
+    - _CutHeight: -0.18
     - _DisolveAnimSpeedX: 0.05
     - _DisolveAnimSpeedY: 0
-    - _EdgeWidth: 0.16
+    - _EdgeWidth: 3.12
     - _Inline: 0.4
-    - _NoiseScale: 34.65
-    - _NoiseStrength: -0.6
+    - _NoiseScale: 32.12
+    - _NoiseStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _DisolveColor: {r: 0, g: 10187.451, b: 0, a: 1}
-    - _MainColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DisolveColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
