@@ -60,11 +60,11 @@ Material:
     - _DisolveAnimSpeedY: 0.5
     - _EdgeWidth: 0.16
     - _Inline: 35.79
-    - _NoiseScale: 36.13
+    - _NoiseScale: 35.11
     - _NoiseStrength: -0.2
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _DisolveColor: {r: 0.25, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DisolveColor: {r: 1024, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

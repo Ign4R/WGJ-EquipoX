@@ -51,16 +51,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cliping: 0
-    - _Fresnel: 0.27
+    - _Fresnel: 0.52
     - _GlitchNoiseScale: 0
     - _Noise: 1
-    - _NoisePower: 0.8
-    - _NoiseScale: 15.8
-    - _NoiseSpeed: 0.29
+    - _NoisePower: 0.81
+    - _NoiseScale: 15
+    - _NoiseSpeed: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _TimeSpeed: 0
     m_Colors:
-    - _Color: {r: 0.24237561, g: 0.8962264, b: 0.5278992, a: 0}
+    - _Color: {r: 0.42013758, g: 0.6886792, b: 0.5086443, a: 0}
     - _NoiseTiling: {r: -11, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
