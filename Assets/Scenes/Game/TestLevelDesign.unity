@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1462,6 +1461,7 @@ Terrain:
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -7751,7 +7751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768869839}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1877856, y: 0.7864187, z: -0.28767768, w: 0.5133458}
+  m_LocalRotation: {x: 0.18778563, y: 0.7864187, z: -0.2876777, w: 0.5133458}
   m_LocalPosition: {x: 6.6109324, y: 5.76, z: 15.177883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8368,12 +8368,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &848023303
 GameObject:
   m_ObjectHideFlags: 0
@@ -8652,7 +8652,7 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AutoDolly:
-    m_Enabled: 1
+    m_Enabled: 0
     m_PositionOffset: 0
     m_SearchRadius: 2
     m_SearchResolution: 5
@@ -9249,12 +9249,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &960564646
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9322,7 +9322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960564643}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1877856, y: 0.7864187, z: -0.28767768, w: 0.5133458}
+  m_LocalRotation: {x: 0.1877856, y: 0.7864187, z: -0.2876777, w: 0.5133457}
   m_LocalPosition: {x: 6.6109324, y: 5.76, z: 15.177883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13172,7 +13172,7 @@ MonoBehaviour:
     roll: 0
   - position: {x: -0.39114094, y: 0, z: 67.27552}
     roll: 0
-  - position: {x: 38.66078, y: 1.9289355, z: 64.35426}
+  - position: {x: 38.66078, y: 0, z: 64.35426}
     roll: 0
   - position: {x: 35.638916, y: 0, z: 39.98155}
     roll: 0
@@ -14860,7 +14860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682706968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1877856, y: 0.7864187, z: -0.28767768, w: 0.5133458}
+  m_LocalRotation: {x: 0.1877856, y: 0.7864187, z: -0.2876777, w: 0.5133457}
   m_LocalPosition: {x: 6.6109324, y: 5.76, z: 15.177883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22793,7 +22793,6 @@ GameObject:
   - component: {fileID: 231396933039141666}
   - component: {fileID: 5570111507522109746}
   - component: {fileID: 1246467610736727241}
-  - component: {fileID: 5570111507522109747}
   m_Layer: 0
   m_Name: ParedPuerta
   m_TagString: Untagged
@@ -23172,28 +23171,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4954610392579541794}
-  m_Mesh: {fileID: -717320569324317209, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
---- !u!64 &5570111507522109747
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4954610392579541794}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: -717320569324317209, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
 --- !u!1 &5680240495364259343
 GameObject:
