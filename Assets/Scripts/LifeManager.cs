@@ -11,6 +11,7 @@ public class LifeManager : MonoBehaviour
     private PlayerMovement pm;
     public ThirdPersonCamera tpc;
     public AttackBehaviour ab;
+
     public Transform respawnPoint; 
     public float delayBeforeGameOverPanel = 2f;  
 
@@ -71,7 +72,7 @@ public class LifeManager : MonoBehaviour
     {
         pm.enabled = false;
         tpc.enabled = false;
-        ab.enabled = false;
+        //ab.enabled = false;
         Debug.Log("Game Over");
 
 
@@ -103,7 +104,7 @@ public class LifeManager : MonoBehaviour
 
         pm.enabled = true;
         tpc.enabled = true;
-        ab.enabled = true;
+        //ab.enabled = true;
 
 
         if (deathPanel != null)
