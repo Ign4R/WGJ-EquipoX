@@ -33,7 +33,7 @@ public class SpikeTrapController : MonoBehaviour
             // Extender las espinas
             foreach (var spike in spikes)
             {
-                AudioManager.main.Play("Cutucuchillo1");
+               // AudioManager.main.Play("Cutucuchillo1");
                 StartCoroutine(MoveSpike(spike, spikeMoveDirection * spikeMoveDistance, spikeExtendSpeed));
                 yield return new WaitForSeconds(rateOfFire);
             }

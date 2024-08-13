@@ -6,6 +6,7 @@ public class OpenDoorFromButtonByColor : MonoBehaviour
 {
     public ButtonPressedController buttonPressedController;
 
+
     public Vector3 startRotation, endRotation;
     public float rotationSpeed = 1.0f;
 
