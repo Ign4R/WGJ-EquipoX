@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class TimerState : MonoBehaviour
 {
-    public enum GameState { State1, State2 }
     public GameState currentState;
 
     [SerializeField] private Slider timeSlider;

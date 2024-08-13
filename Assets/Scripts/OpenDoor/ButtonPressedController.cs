@@ -28,7 +28,7 @@ public class ButtonPressedController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Box") && IsPressed) 
+        if ((other.CompareTag("Box") || other.CompareTag("Player")) && IsPressed) 
         {
             IsPressed = false;
             //AudioManager.main.Stop("ButtonPressed");
