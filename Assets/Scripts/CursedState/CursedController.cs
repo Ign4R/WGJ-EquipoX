@@ -19,6 +19,7 @@ public class CursedController : MonoBehaviour
     {
         if(timerState.currentState == GameState.State1 && isGhost)
         {
+            gameObject.layer = 6;
             rigidbody.isKinematic = false;
             playerMovement.indexAnim = 0;
             playerMovement.canJump = true;
@@ -38,6 +39,7 @@ public class CursedController : MonoBehaviour
 
         if(timerState.currentState == GameState.State2 && !isGhost)
         {
+            gameObject.layer = 9;
             playerMovement.indexAnim = 1;
             playerMovement.canJump = false;
             cursedPosition = timerState.gameObject.transform.position;

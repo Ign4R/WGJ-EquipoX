@@ -49,6 +49,7 @@ public class LifeManager : MonoBehaviour
 
             if (lives <= 0)
             {
+                pm.anim[pm.indexAnim].SetBool("IsDead", true);
                 Invoke("GameOver", delayBeforeGameOverPanel); 
             }
         }
@@ -71,8 +72,8 @@ public class LifeManager : MonoBehaviour
 
     private void GameOver()
     {
-        cursedC.enabled = false;
         pm.anim[pm.indexAnim].SetBool("IsDead", true);
+        cursedC.enabled = false;
         pm.enabled = false;
         tpc.enabled = false;
         //ab.enabled = false;
@@ -82,13 +83,15 @@ public class LifeManager : MonoBehaviour
         if (deathPanel != null)
         {
             deathPanel.SetActive(true);
-
-
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+           
         }
     }
-
+    public void SceneMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     private void ResetLevel()
     {
 

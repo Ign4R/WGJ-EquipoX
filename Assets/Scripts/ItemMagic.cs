@@ -8,7 +8,7 @@ public class ItemMagic : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Item"))
+        if (other.gameObject.layer == 9)
         {
             lifePlayer.GrabItem();
             gameObject.SetActive(false);

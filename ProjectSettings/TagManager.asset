@@ -8,6 +8,9 @@ TagManager:
   - Door
   - Enemy
   - Breaker
+  - Grass
+  - Item
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - Player
   - Weapon
   - Barrier
-  - 
-  - 
-  - 
+  - PlayerFantasma
+  - Item
+  - Win
   - 
   - 
   - 
