@@ -5304,6 +5304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PPP
       objectReference: {fileID: 0}
+    - target: {fileID: 7248369224404849829, guid: 6692323df97c63b489ff6af67ebd7fb8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8448079992620313843, guid: 6692323df97c63b489ff6af67ebd7fb8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
