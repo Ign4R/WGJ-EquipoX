@@ -6,7 +6,7 @@ public class CursedController : MonoBehaviour
 {
     public bool isGhost;
     public TimerState timerState;
-    public Vector3 cursedPosition;
+    public Vector3 cursedPosition; // TODO: Restaruar a esta posicion cuando toma el agua luego de ser fantasma
     public Rigidbody rigidbody;
     public Collider collider;
 

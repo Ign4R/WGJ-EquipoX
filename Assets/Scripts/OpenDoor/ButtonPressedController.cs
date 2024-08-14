@@ -31,8 +31,8 @@ public class ButtonPressedController : MonoBehaviour
         if ((other.CompareTag("Box") || other.CompareTag("Player")) && IsPressed) 
         {
             IsPressed = false;
-            //AudioManager.main.Stop("ButtonPressed");
-           // AudioManager.main.Play("SecretStoneWall");
+            AudioManager.main.Stop("ButtonPressed");
+           AudioManager.main.Play("SecretStoneWall");
         }
     }
 
@@ -41,8 +41,8 @@ public class ButtonPressedController : MonoBehaviour
         if (other.CompareTag("Box") && !IsPressed)
         {
             IsPressed = true;
-            //AudioManager.main.Play("ButtonPressed");
-           // AudioManager.main.Play("SecretStoneWall");
+            AudioManager.main.Play("ButtonPressed");
+           AudioManager.main.Play("SecretStoneWall");
         }
     }
 }
