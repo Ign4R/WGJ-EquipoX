@@ -30,13 +30,7 @@ public class TimerState : MonoBehaviour
         {
             timeSlider.gameObject.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            StopAllCoroutines(); // Detiene todos los coroutines en ejecución
-            ResetState(); // Resetea los estados y variables
-            StartCoroutine(StateLoop()); // Reinicia el ciclo de estados
-            Debug.Log("Estado Normal");
-        }
+      
     }
 
     private void ResetState()
@@ -81,5 +75,13 @@ public class TimerState : MonoBehaviour
             time -= 1f;
         }
         timeSlider.value = 0;
+    }
+
+    public void GrabItem()
+    {
+        StopAllCoroutines(); // Detiene todos los coroutines en ejecución
+        ResetState(); // Resetea los estados y variables
+        StartCoroutine(StateLoop()); // Reinicia el ciclo de estados
+        Debug.Log("Estado Normal");
     }
 }

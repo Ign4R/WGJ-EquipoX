@@ -118,4 +118,6 @@ public class LifeManager : MonoBehaviour
             Cursor.visible = false;
         }
     }
+
+
 }
