@@ -14,7 +14,7 @@ public class AttackBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && !isAttacking)
         {
             AttackView();
-            rb.constraints = RigidbodyConstraints.FreezePositionY;
+            // rb.constraints = RigidbodyConstraints.FreezePositionY;
             attackRange.SetActive(true);
             isAttacking = true;
             timer = maxTimer;
@@ -25,8 +25,8 @@ public class AttackBehaviour : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0f)
             {
-                rb.constraints = RigidbodyConstraints.None;
-                rb.constraints = RigidbodyConstraints.FreezeRotation;
+                // rb.constraints = RigidbodyConstraints.None;
+                // rb.constraints = RigidbodyConstraints.FreezeRotation;
                 attackRange.SetActive(false);
                 isAttacking = false;
             }
@@ -36,8 +36,8 @@ public class AttackBehaviour : MonoBehaviour
     public void AttackView()
     {
         _anim.SetTrigger("ScytheAttackAnimation");
-        // bool randomBool = Random.value > 0.5f;
-        // AudioManager.main.Play(randomBool ? "Ataque1" : "Ataque2");
+        bool randomBool = Random.value > 0.5f;
+        AudioManager.main.Play(randomBool ? "Ataque1" : "Ataque2");
     }
 }
 
