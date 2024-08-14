@@ -24569,6 +24569,10 @@ PrefabInstance:
       value: -0.06265564
       objectReference: {fileID: 0}
     - target: {fileID: 4056508521874840264, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 6798563820669454316}
+    - target: {fileID: 4056508521874840264, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: playerMovement
       value: 
       objectReference: {fileID: 6798563820669454307}
@@ -24977,16 +24981,32 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.69393253
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_Size.y
       value: 1.9577422
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: m_Size.z
+      value: 0.8497
       objectReference: {fileID: 0}
     - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: m_Center.x
+      value: -0.02807951
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_Center.y
       value: 1.0211289
+      objectReference: {fileID: 0}
+    - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: m_Center.z
+      value: 0.07515001
       objectReference: {fileID: 0}
     - target: {fileID: 8673672689554429291, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_ProvidesContacts
