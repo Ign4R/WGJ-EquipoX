@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: CancionPrincipal
-    clip: {fileID: 8300000, guid: 0f4ae5cb625bb5240a8ef15ab4558579, type: 3}
+    clip: {fileID: 8300000, guid: 9516b267ee291294faf113558d652ace, type: 3}
     volume: 0.034
     pitch: 0.1
     loop: 1

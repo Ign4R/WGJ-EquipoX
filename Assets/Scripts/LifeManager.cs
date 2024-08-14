@@ -47,7 +47,7 @@ public class LifeManager : MonoBehaviour
 
             if (lives <= 0)
             {
-                pm.anim.SetBool("IsDead", true);
+                pm.anim[pm.indexAnim].SetBool("IsDead", true);
                 Invoke("GameOver", delayBeforeGameOverPanel); 
             }
         }
@@ -93,7 +93,7 @@ public class LifeManager : MonoBehaviour
         UpdateLivesUI();
 
 
-        pm.anim.SetBool("IsDead", false);
+        pm.anim[pm.indexAnim].SetBool("IsDead", false);
 
         if (respawnPoint != null)
         {

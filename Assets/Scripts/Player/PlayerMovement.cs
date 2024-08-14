@@ -15,10 +15,13 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public Transform orientation;
     public float groundCheckRadius = 0.2f;
+    public int indexAnim = 0;
     public LayerMask groundLayer;
 
+    public bool canJump = true;
+
     [Header("References")]
-    public Animator anim;
+    public Animator[] anim;
     private Rigidbody rb;
     private bool isGrounded;
 
@@ -45,11 +48,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveVelocity.magnitude > minMovement.magnitude)
         {
-            anim.SetBool("IsRunning", true);
+            anim[indexAnim].SetBool("IsRunning", true);
         }
         else
         {
-            anim.SetBool("IsRunning", false);
+            anim[indexAnim].SetBool("IsRunning", false);
         }
 
         if (moveDirection != Vector3.zero)
@@ -60,10 +63,10 @@ public class PlayerMovement : MonoBehaviour
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space) && canJump)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            anim.SetTrigger("IsJumping");
+            anim[indexAnim].SetTrigger("IsJumping");
         }
     }
 

@@ -1,0 +1,1 @@
+public enum GameState { State1, State2 }
