@@ -5,32 +5,32 @@ using UnityEngine.UI;
 public class LifeManager : MonoBehaviour
 {
     public int lives = 3;
-    public Image[] lifeImages;
-    public GameObject deathPanel;  
+    public GameObject[] lifeImages; 
+    public GameObject[] brokenLifeImages; 
+    public GameObject deathPanel;
 
     private PlayerMovement pm;
     public ThirdPersonCamera tpc;
     public AttackBehaviour ab;
 
-    public Transform respawnPoint; 
-    public float delayBeforeGameOverPanel = 2f;  
+    public Transform respawnPoint;
+    public float delayBeforeGameOverPanel = 2f;
 
     private void Start()
     {
         UpdateLivesUI();
         pm = GetComponent<PlayerMovement>();
 
-     
         if (deathPanel != null)
         {
             deathPanel.SetActive(false);
-        }          
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
-    {        
+    {
         if (collision.gameObject.CompareTag("Enemy"))
-        {         
+        {
             if (gameObject.CompareTag("Player"))
             {
                 LoseLife();
@@ -48,7 +48,7 @@ public class LifeManager : MonoBehaviour
             if (lives <= 0)
             {
                 pm.anim[pm.indexAnim].SetBool("IsDead", true);
-                Invoke("GameOver", delayBeforeGameOverPanel); 
+                Invoke("GameOver", delayBeforeGameOverPanel);
             }
         }
     }
@@ -59,11 +59,13 @@ public class LifeManager : MonoBehaviour
         {
             if (i < lives)
             {
-                lifeImages[i].enabled = true;
+                lifeImages[i].SetActive(true);
+                brokenLifeImages[i].SetActive(false);
             }
             else
             {
-                lifeImages[i].enabled = false;
+                lifeImages[i].SetActive(false);
+                brokenLifeImages[i].SetActive(true);
             }
         }
     }
@@ -72,15 +74,11 @@ public class LifeManager : MonoBehaviour
     {
         pm.enabled = false;
         tpc.enabled = false;
-        //ab.enabled = false;
         Debug.Log("Game Over");
-
 
         if (deathPanel != null)
         {
             deathPanel.SetActive(true);
-
-
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -88,10 +86,8 @@ public class LifeManager : MonoBehaviour
 
     private void ResetLevel()
     {
-
         lives = 2;
         UpdateLivesUI();
-
 
         pm.anim[pm.indexAnim].SetBool("IsDead", false);
 
@@ -101,16 +97,12 @@ public class LifeManager : MonoBehaviour
             transform.rotation = respawnPoint.rotation;
         }
 
-
         pm.enabled = true;
         tpc.enabled = true;
-        //ab.enabled = true;
-
 
         if (deathPanel != null)
         {
             deathPanel.SetActive(false);
-
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
