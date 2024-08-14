@@ -8,7 +8,7 @@ public class CursedController : MonoBehaviour
     public TimerState timerState;
     public Vector3 cursedPosition;
     public Rigidbody rigidbody;
-    public CapsuleCollider capsuleCollider;
+    public BoxCollider capsuleCollider;
 
     public GameObject[] nonGhostPrefabs;
     public GameObject[] ghostPrefabs;
@@ -19,6 +19,7 @@ public class CursedController : MonoBehaviour
     {
         if(timerState.currentState == GameState.State1 && isGhost)
         {
+            playerMovement.indexAnim = 0;
             playerMovement.canJump = true;
             rigidbody.useGravity = true;
             capsuleCollider.isTrigger = false;
@@ -36,6 +37,7 @@ public class CursedController : MonoBehaviour
 
         if(timerState.currentState == GameState.State2 && !isGhost)
         {
+            playerMovement.indexAnim = 1;
             playerMovement.canJump = false;
             cursedPosition = timerState.gameObject.transform.position;
             isGhost = true;
