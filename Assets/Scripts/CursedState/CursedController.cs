@@ -19,6 +19,7 @@ public class CursedController : MonoBehaviour
     {
         if(timerState.currentState == GameState.State1 && isGhost)
         {
+            rigidbody.isKinematic = false;
             playerMovement.indexAnim = 0;
             playerMovement.canJump = true;
             rigidbody.useGravity = true;
@@ -43,6 +44,7 @@ public class CursedController : MonoBehaviour
             isGhost = true;
             rigidbody.useGravity = false;
             collider.isTrigger = true;
+           
             foreach (var item in nonGhostPrefabs)
             {
                 item.SetActive(false);
@@ -52,6 +54,9 @@ public class CursedController : MonoBehaviour
                 item.SetActive(true);
             }
             RenderSettings.fog = true;
+           
+            playerMovement.RespawnPosition();
+            rigidbody.isKinematic = false;
         }
     }
 }

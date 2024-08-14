@@ -6,21 +6,23 @@ public class LifeManager : MonoBehaviour
 {
     public int lives = 3;
     public Image[] lifeImages;
-    public GameObject deathPanel;  
+    public GameObject deathPanel;
 
+    private CursedController cursedC;
     private PlayerMovement pm;
     public ThirdPersonCamera tpc;
     public AttackBehaviour ab;
 
     public Transform respawnPoint; 
-    public float delayBeforeGameOverPanel = 2f;  
+    public float delayBeforeGameOverPanel = 0.1f;  
 
     private void Start()
     {
         UpdateLivesUI();
         pm = GetComponent<PlayerMovement>();
+        cursedC = GetComponent<CursedController>();
 
-     
+
         if (deathPanel != null)
         {
             deathPanel.SetActive(false);
@@ -47,7 +49,6 @@ public class LifeManager : MonoBehaviour
 
             if (lives <= 0)
             {
-                pm.anim[pm.indexAnim].SetBool("IsDead", true);
                 Invoke("GameOver", delayBeforeGameOverPanel); 
             }
         }
@@ -70,6 +71,8 @@ public class LifeManager : MonoBehaviour
 
     private void GameOver()
     {
+        cursedC.enabled = false;
+        pm.anim[pm.indexAnim].SetBool("IsDead", true);
         pm.enabled = false;
         tpc.enabled = false;
         //ab.enabled = false;

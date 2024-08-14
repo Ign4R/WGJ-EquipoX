@@ -23,6 +23,29 @@ public class TimerState : MonoBehaviour
         StartCoroutine(StateLoop());
     }
 
+
+    private void Update()
+    {
+        if (lifeManager.lives < 1)
+        {
+            timeSlider.gameObject.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StopAllCoroutines(); // Detiene todos los coroutines en ejecución
+            ResetState(); // Resetea los estados y variables
+            StartCoroutine(StateLoop()); // Reinicia el ciclo de estados
+            Debug.Log("Estado Normal");
+        }
+    }
+
+    private void ResetState()
+    {
+        currentState = GameState.State1;
+        timeSlider.value = maxTimeState1;
+        timeSlider.fillRect.GetComponent<Image>().color = estado1Color;
+        Debug.Log("Estados reseteados");
+    }
     private IEnumerator StateLoop()
     {
         while (true)

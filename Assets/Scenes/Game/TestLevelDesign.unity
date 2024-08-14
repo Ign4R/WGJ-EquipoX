@@ -7967,8 +7967,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768869839}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13916677, y: -0.6995943, z: 0.14185192, w: 0.6863516}
-  m_LocalPosition: {x: 23.701277, y: 7.8026114, z: 16.152868}
+  m_LocalRotation: {x: 0.17014891, y: -0.68998027, z: 0.17209628, w: 0.68217266}
+  m_LocalPosition: {x: 23.706429, y: 7.7962027, z: 16.06277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8872,7 +8872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1410101404}
-  m_PathPosition: 0.6729172
+  m_PathPosition: 0.5823584
   m_PositionUnits: 1
   m_PathOffset: {x: 20, y: 2, z: 0}
   m_XDamping: 0
@@ -9528,8 +9528,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960564643}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13916677, y: -0.6995943, z: 0.14185192, w: 0.6863516}
-  m_LocalPosition: {x: 23.701277, y: 7.8026114, z: 16.152868}
+  m_LocalRotation: {x: 0.17014891, y: -0.68998027, z: 0.17209628, w: 0.68217266}
+  m_LocalPosition: {x: 23.706429, y: 7.7962027, z: 16.06277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12806,6 +12806,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299088416}
   m_Mesh: {fileID: 2885666106262570136, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
+--- !u!1 &1304337044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1304337045}
+  m_Layer: 0
+  m_Name: Waypoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1304337045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304337044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.82, y: 0, z: 7.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1720086585}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1307626024
 GameObject:
   m_ObjectHideFlags: 0
@@ -15172,8 +15203,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682706968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13916677, y: -0.6995943, z: 0.14185192, w: 0.6863516}
-  m_LocalPosition: {x: 23.701277, y: 7.8026114, z: 16.152868}
+  m_LocalRotation: {x: 0.17014891, y: -0.68998027, z: 0.17209628, w: 0.68217266}
+  m_LocalPosition: {x: 23.706429, y: 7.7962027, z: 16.06277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15604,6 +15635,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706792495}
   m_Mesh: {fileID: 2885666106262570136, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
+--- !u!1 &1720086584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720086585}
+  m_Layer: 0
+  m_Name: Waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720086585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720086584}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1304337045}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1754889847
 GameObject:
   m_ObjectHideFlags: 0
@@ -24729,10 +24792,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1875491687006608132, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875491687006608132, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1304337045}
     - target: {fileID: 3823305486974598563, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: tpc
       value: 
       objectReference: {fileID: 847652771}
+    - target: {fileID: 3823305486974598563, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: lives
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3823305486974598563, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: lifeImages.Array.data[0]
       value: 
@@ -24755,7 +24830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399895862139237380, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4399895862139237380, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24797,6 +24872,14 @@ PrefabInstance:
       propertyPath: timeSlider
       value: 
       objectReference: {fileID: 947474415}
+    - target: {fileID: 8857257020336544311, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: maxTimeState1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857257020336544311, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: maxTimeState2
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25880,3 +25963,4 @@ SceneRoots:
   - {fileID: 643613236}
   - {fileID: 1871575380}
   - {fileID: 1888818382}
+  - {fileID: 1720086585}
