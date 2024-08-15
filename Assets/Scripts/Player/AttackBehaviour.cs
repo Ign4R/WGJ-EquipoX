@@ -7,16 +7,16 @@ public class AttackBehaviour : MonoBehaviour
     public Animator _anim;   
     private float timer = 0f;
     public float maxTimer;
-    private bool isAttacking = false;
+    public bool isAttacking = false;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !isAttacking)
         {
+            isAttacking = true;
             AttackView();
             // rb.constraints = RigidbodyConstraints.FreezePositionY;
             attackRange.SetActive(true);
-            isAttacking = true;
             timer = maxTimer;
         }
 

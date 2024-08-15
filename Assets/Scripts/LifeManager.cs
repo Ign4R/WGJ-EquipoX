@@ -28,11 +28,11 @@ public class LifeManager : MonoBehaviour
             deathPanel.SetActive(false);
         }          
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {        
-        if (collision.gameObject.CompareTag("Enemy"))
-        {         
+    private void OnTriggerEnter(Collider other)
+    {   
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            
             if (gameObject.CompareTag("Player"))
             {
                 LoseLife();
@@ -42,6 +42,7 @@ public class LifeManager : MonoBehaviour
 
     public void LoseLife()
     {
+        if (gameObject.layer == 9) return;
         if (lives > 0)
         {
             lives--;
@@ -50,7 +51,7 @@ public class LifeManager : MonoBehaviour
             if (lives <= 0)
             {
                 pm.anim[pm.indexAnim].SetBool("IsDead", true);
-                Invoke("GameOver", delayBeforeGameOverPanel); 
+                Invoke("GameOver", 0); 
             }
         }
     }

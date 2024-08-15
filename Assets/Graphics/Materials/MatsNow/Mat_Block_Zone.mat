@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Ropa-Pelo-Oliver 1
+  m_Name: Mat_Block_Zone
   m_Shader: {fileID: -6465566751694194690, guid: 85cbfc02b25c27e4aafcec396e102b15, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,16 +51,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cliping: 1
-    - _Fresnel: 0.77
+    - _Fresnel: 0.58
     - _GlitchNoiseScale: 0
     - _Noise: 1
-    - _NoisePower: 3.11
+    - _NoisePower: 2.61
     - _NoiseScale: 2
-    - _NoiseSpeed: 24.62
+    - _NoiseSpeed: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _TimeSpeed: 0
     m_Colors:
-    - _Color: {r: 255.22775, g: 0, b: 0, a: 1}
+    - _Color: {r: 10.0146885, g: 126.10694, b: 26.817507, a: 1}
     - _NoiseTiling: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

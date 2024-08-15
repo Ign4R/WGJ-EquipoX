@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6213024162448906716}
   - component: {fileID: 5363624623357662593}
   - component: {fileID: 2616708857940329030}
+  - component: {fileID: 158765073406697580}
   m_Layer: 10
   m_Name: ItemMagico
   m_TagString: Untagged
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.66575253, y: 0.69431, z: 0.70278686}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &158765073406697580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736930676367639577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a54d5a2564a1647ba54a3707d46801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifePlayer: {fileID: 0}
