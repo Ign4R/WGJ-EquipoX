@@ -28,17 +28,18 @@ public class LifeManager : MonoBehaviour
             deathPanel.SetActive(false);
         }          
     }
-    private void OnTriggerEnter(Collider other)
-    {   
-        if (other.gameObject.CompareTag("Enemy"))
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            
+
             if (gameObject.CompareTag("Player"))
             {
                 LoseLife();
             }
         }
     }
+
 
     public void LoseLife()
     {

@@ -39401,6 +39401,7 @@ GameObject:
   - component: {fileID: 1168149435}
   - component: {fileID: 1168149434}
   - component: {fileID: 1168149433}
+  - component: {fileID: 1168149437}
   m_Layer: 12
   m_Name: Block3
   m_TagString: Untagged
@@ -39517,6 +39518,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168149431}
   m_Mesh: {fileID: 7348095818171033826, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
+--- !u!65 &1168149437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168149431}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.052971855, y: 2.3207097, z: 2.5794191}
+  m_Center: {x: 0.0000038146973, y: -0.35302868, z: 0.000000003302052}
 --- !u!1 &1169312114
 GameObject:
   m_ObjectHideFlags: 0
@@ -59420,6 +59442,7 @@ GameObject:
   - component: {fileID: 1740867375}
   - component: {fileID: 1740867374}
   - component: {fileID: 1740867373}
+  - component: {fileID: 1740867377}
   m_Layer: 12
   m_Name: Block3 (1)
   m_TagString: Untagged
@@ -59536,6 +59559,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740867371}
   m_Mesh: {fileID: 7348095818171033826, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
+--- !u!65 &1740867377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740867371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05297194, y: 2.1169744, z: 2.5794187}
+  m_Center: {x: -2.2982582e-14, y: -0.25116152, z: -0.00000095314164}
 --- !u!1 &1746073561
 GameObject:
   m_ObjectHideFlags: 0
@@ -60655,6 +60699,7 @@ GameObject:
   - component: {fileID: 1761675830}
   - component: {fileID: 1761675829}
   - component: {fileID: 1761675828}
+  - component: {fileID: 1761675832}
   m_Layer: 12
   m_Name: Block3 (2)
   m_TagString: Untagged
@@ -60771,6 +60816,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761675826}
   m_Mesh: {fileID: 7348095818171033826, guid: 4eca56f628f21b741935cd36863d8283, type: 3}
+--- !u!65 &1761675832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761675826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.052971873, y: 2.4818685, z: 2.579419}
+  m_Center: {x: -0.000000010733603, y: 0.43360868, z: -0.0000000090183185}
 --- !u!1 &1765559533
 GameObject:
   m_ObjectHideFlags: 0
@@ -76206,7 +76272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 874924840351169890, guid: 70814ee6a8a800e49936f0508a884d77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.453
+      value: -2.491
       objectReference: {fileID: 0}
     - target: {fileID: 874924840351169890, guid: 70814ee6a8a800e49936f0508a884d77, type: 3}
       propertyPath: m_LocalPosition.z
@@ -76219,6 +76285,10 @@ PrefabInstance:
     - target: {fileID: 4567463196782423584, guid: 70814ee6a8a800e49936f0508a884d77, type: 3}
       propertyPath: m_Name
       value: SpikeTraps (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530278973423598050, guid: 70814ee6a8a800e49936f0508a884d77, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6814328720152180249, guid: 70814ee6a8a800e49936f0508a884d77, type: 3}
       propertyPath: rateOfFire
