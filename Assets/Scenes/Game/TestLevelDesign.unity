@@ -82643,7 +82643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8676926386290395952, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8857257020336544311, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: timeSlider
