@@ -17022,7 +17022,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1005467700107967980, guid: 6692323df97c63b489ff6af67ebd7fb8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7248369224404849829, guid: 6692323df97c63b489ff6af67ebd7fb8, type: 3}
       propertyPath: m_Name
@@ -26492,10 +26492,10 @@ MonoBehaviour:
   m_LookAt: {fileID: 6798563820669454304}
   m_Follow: {fileID: 6798563820669454304}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FarClipPlane: 100
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -28635,7 +28635,7 @@ GameObject:
   - component: {fileID: 816528102}
   - component: {fileID: 816528101}
   - component: {fileID: 816528103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piso (123)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31034,12 +31034,12 @@ MonoBehaviour:
   m_VerticalDamping: 0.5
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_DeadZoneWidth: 0.11
+  m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.36
-  m_SoftZoneHeight: 0.18
-  m_BiasX: 0
-  m_BiasY: 0
+  m_SoftZoneWidth: 0.081
+  m_SoftZoneHeight: 0.248
+  m_BiasX: -0.105
+  m_BiasY: 0.293
   m_CenterOnActivate: 1
 --- !u!114 &893604480
 MonoBehaviour:
@@ -32659,7 +32659,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -32720,8 +32720,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 100
+  field of view: 50
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -37668,7 +37668,7 @@ GameObject:
   - component: {fileID: 1124380059}
   - component: {fileID: 1124380058}
   - component: {fileID: 1124380060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piso (121)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67105,7 +67105,7 @@ GameObject:
   - component: {fileID: 1987419934}
   - component: {fileID: 1987419933}
   - component: {fileID: 1987419935}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piso (122)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72112,7 +72112,7 @@ GameObject:
   - component: {fileID: 2131437003}
   - component: {fileID: 2131437002}
   - component: {fileID: 2131437004}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piso (120)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80555,6 +80555,10 @@ PrefabInstance:
     - target: {fileID: 7420760395756927884, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420760395756927884, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8570204993933067529, guid: f5f561bf834aac744ba81f7cbe6ffd9f, type: 3}
       propertyPath: m_Name
