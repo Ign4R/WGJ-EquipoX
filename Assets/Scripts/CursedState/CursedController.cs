@@ -17,8 +17,10 @@ public class CursedController : MonoBehaviour
 
     void Update()
     {
-        if(timerState.currentState == GameState.State1 && isGhost)
+        if (timerState.currentState == GameState.State1 && isGhost)
         {
+            gameObject.layer = 6;
+            rigidbody.isKinematic = false;
             playerMovement.indexAnim = 0;
             playerMovement.canJump = true;
             rigidbody.useGravity = true;
@@ -35,14 +37,15 @@ public class CursedController : MonoBehaviour
             RenderSettings.fog = false;
         }
 
-        if(timerState.currentState == GameState.State2 && !isGhost)
+        if (timerState.currentState == GameState.State2 && !isGhost)
         {
+            gameObject.layer = 9;
             playerMovement.indexAnim = 1;
             playerMovement.canJump = false;
             cursedPosition = timerState.gameObject.transform.position;
             isGhost = true;
-            rigidbody.useGravity = false;
-            collider.isTrigger = true;
+
+
             foreach (var item in nonGhostPrefabs)
             {
                 item.SetActive(false);
@@ -52,6 +55,7 @@ public class CursedController : MonoBehaviour
                 item.SetActive(true);
             }
             RenderSettings.fog = true;
+
         }
     }
 }
