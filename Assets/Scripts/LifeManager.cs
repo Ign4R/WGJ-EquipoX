@@ -37,9 +37,9 @@ public class LifeManager : MonoBehaviour
             LoseLife(true);
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
 
             if (gameObject.CompareTag("Player"))
@@ -48,6 +48,7 @@ public class LifeManager : MonoBehaviour
             }
         }
     }
+ 
 
 
     public void LoseLife(bool cursed)
