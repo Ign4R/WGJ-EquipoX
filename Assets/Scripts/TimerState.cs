@@ -60,7 +60,7 @@ public class TimerState : MonoBehaviour
                     yield return new WaitForSeconds(waitTimeBetweenStates);
                     currentState = GameState.State1;
                     timeSlider.fillRect.GetComponent<Image>().color = estado1Color;  
-                    lifeManager.LoseLife();  
+                    lifeManager.LoseLife(true);  
                     break;
             }
         }

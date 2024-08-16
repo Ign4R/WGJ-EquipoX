@@ -14,11 +14,13 @@ public class LifeManager : MonoBehaviour
     public AttackBehaviour ab;
 
     public Transform respawnPoint; 
-    public float delayBeforeGameOverPanel = 0.1f;  
+    public float delayBeforeGameOverPanel = 0.1f;
+    public Slider lifeSlider;
+    public int damageAmount=10;
 
     private void Start()
     {
-        UpdateLivesUI();
+        
         pm = GetComponent<PlayerMovement>();
         cursedC = GetComponent<CursedController>();
 
@@ -28,6 +30,13 @@ public class LifeManager : MonoBehaviour
             deathPanel.SetActive(false);
         }          
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            LoseLife(true);
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -35,42 +44,33 @@ public class LifeManager : MonoBehaviour
 
             if (gameObject.CompareTag("Player"))
             {
-                LoseLife();
+                LoseLife(false);
             }
         }
     }
 
 
-    public void LoseLife()
+    public void LoseLife(bool cursed)
     {
-        if (gameObject.layer == 9) return;
+
+        if (gameObject.layer == 9 && !cursed) return;
         if (lives > 0)
         {
-            lives--;
-            UpdateLivesUI();
+            lives -= damageAmount; // Resta la cantidad de daño
+            if (lives < 0) lives = 0; // Asegúrate de que las vidas no sean negativas
+
+            // Actualiza el Slider
+            // Convierte las vidas a un rango de 0 a 1
+            lifeSlider.value = (float)lives / 100;
 
             if (lives <= 0)
             {
                 pm.anim[pm.indexAnim].SetBool("IsDead", true);
-                Invoke("GameOver", 0); 
+                Invoke("GameOver", 0);
             }
         }
     }
 
-    private void UpdateLivesUI()
-    {
-        for (int i = 0; i < lifeImages.Length; i++)
-        {
-            if (i < lives)
-            {
-                lifeImages[i].enabled = true;
-            }
-            else
-            {
-                lifeImages[i].enabled = false;
-            }
-        }
-    }
 
     private void GameOver()
     {
@@ -98,7 +98,6 @@ public class LifeManager : MonoBehaviour
     {
 
         lives = 2;
-        UpdateLivesUI();
 
 
         pm.anim[pm.indexAnim].SetBool("IsDead", false);
