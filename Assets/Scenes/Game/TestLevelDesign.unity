@@ -3759,7 +3759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4503,7 +4503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7601,7 +7601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23661,7 +23661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35967,7 +35967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39466,6 +39466,10 @@ PrefabInstance:
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_Name
       value: ItemMagico
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71350,7 +71354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736930676367639577, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5280612005026348974, guid: de1aefdb76cd2f240902e9a3cc25a363, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77277,6 +77281,10 @@ PrefabInstance:
     - target: {fileID: 5939830834854411400, guid: 210b27dd6a3d48f42a1684502643ab90, type: 3}
       propertyPath: m_Name
       value: StarOfTheMemories
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917276134115424369, guid: 210b27dd6a3d48f42a1684502643ab90, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
