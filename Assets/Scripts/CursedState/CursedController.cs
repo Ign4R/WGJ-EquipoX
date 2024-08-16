@@ -7,7 +7,7 @@ public class CursedController : MonoBehaviour
     public bool isGhost;
     public TimerState timerState;
     public Vector3 cursedPosition; // TODO: Restaruar a esta posicion cuando toma el agua luego de ser fantasma
-    public Rigidbody rigidbody;
+    public Rigidbody _rigidbody;
     public Collider collider;
 
     public GameObject[] nonGhostPrefabs;
@@ -20,12 +20,11 @@ public class CursedController : MonoBehaviour
     {
         if(timerState.currentState == GameState.State1 && isGhost)
         {
-            ViewItemMagic(false);
+           
             gameObject.layer = 6;
-            rigidbody.isKinematic = false;
             playerMovement.indexAnim = 0;
             playerMovement.canJump = true;
-            rigidbody.useGravity = true;
+            _rigidbody.useGravity = true;
             collider.isTrigger = false;
             isGhost = false;
             foreach (var item in nonGhostPrefabs)
@@ -41,12 +40,11 @@ public class CursedController : MonoBehaviour
 
         if(timerState.currentState == GameState.State2 && !isGhost)
         {
-            ViewItemMagic(true);
+            isGhost = true;
             gameObject.layer = 9;
             playerMovement.indexAnim = 1;
             playerMovement.canJump = true;
             cursedPosition = timerState.gameObject.transform.position;
-            isGhost = true;
  
            
             foreach (var item in nonGhostPrefabs)

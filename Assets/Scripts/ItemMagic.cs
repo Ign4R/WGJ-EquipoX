@@ -11,7 +11,11 @@ public class ItemMagic : MonoBehaviour
     {
         if (other.gameObject.layer == 9)
         {
-            blockTable.SetActive(false);
+            if (blockTable != null)
+            {
+                blockTable.SetActive(false);
+            }
+           
             lifePlayer.GrabItem();
             Destroy(gameObject);
         }

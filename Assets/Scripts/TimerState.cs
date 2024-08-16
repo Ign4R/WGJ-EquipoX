@@ -56,7 +56,7 @@ public class TimerState : MonoBehaviour
 
                 case GameState.State2:
                     Debug.Log("Estado Fantasma");
-                    yield return StartCoroutine(StateTimer(maxTimeState2, 1f)); 
+                    yield return StartCoroutine(StateTimer(maxTimeState2, 1f));
                     yield return new WaitForSeconds(waitTimeBetweenStates);
                     currentState = GameState.State1;
                     timeSlider.fillRect.GetComponent<Image>().color = estado1Color;  

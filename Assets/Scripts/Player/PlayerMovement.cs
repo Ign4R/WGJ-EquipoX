@@ -27,11 +27,12 @@ public class PlayerMovement : MonoBehaviour
     public Animator[] anim;
     private Rigidbody rb;
     private bool isGrounded;
+    private float speedMax;
+
+    public float SpeedMax { get => speedMax; set => speedMax = value; }
 
     void Awake()
     {
-        _startPos= transform.localPosition;
-
         rb = GetComponent<Rigidbody>();
         minMovement = new Vector3(.02f, .02f, .02f);
    
