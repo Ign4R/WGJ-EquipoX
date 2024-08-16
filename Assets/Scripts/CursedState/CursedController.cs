@@ -44,7 +44,7 @@ public class CursedController : MonoBehaviour
             ViewItemMagic(true);
             gameObject.layer = 9;
             playerMovement.indexAnim = 1;
-            playerMovement.canJump = false;
+            playerMovement.canJump = true;
             cursedPosition = timerState.gameObject.transform.position;
             isGhost = true;
  
