@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
+    public Transform[] waypoints;
+    public Vector3 _startPos;
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
@@ -14,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ground Check")]
     public Transform groundCheck;
     public Transform orientation;
+   
     public float groundCheckRadius = 0.2f;
     public int indexAnim = 0;
     public LayerMask groundLayer;
@@ -27,8 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        _startPos= transform.localPosition;
+
         rb = GetComponent<Rigidbody>();
         minMovement = new Vector3(.02f, .02f, .02f);
+   
     }
 
     void Update()
@@ -77,5 +83,12 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
+    }
+
+    public void RespawnPosition()
+    {
+        rb.MovePosition(_startPos);
+        rb.isKinematic = true;
+
     }
 }
